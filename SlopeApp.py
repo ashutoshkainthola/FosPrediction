@@ -59,7 +59,7 @@ def main():
     # and store it in the variable result
     if st.button("Predict"):
         result = prediction(float(Height), float(SlopeAngle), float(Cohesion), float(FrictionAngle))
-        result = np.array(result, dtype= float) 
+        result = np.round(np.array(result, dtype= float), 2)
     st.success('The Factor of Safety of the slope is: {}'.format(result))
      
 if __name__=='__main__':
