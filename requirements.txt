@@ -4,4 +4,4 @@ pandas
 PIL 
 typing_extensions 
 streamlit 
-joblib 
+
