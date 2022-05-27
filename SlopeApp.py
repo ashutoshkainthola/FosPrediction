@@ -3,8 +3,7 @@ import numpy as np
 import pickle
 import streamlit as st
 from PIL import Image
-pip install typing_extensions
-import typing-extensions 
+import typing_extensions 
   
 # loading in the model to predict on the data
 pickle_in = open('slr.pkl', 'rb')
@@ -36,9 +35,9 @@ def main():
     <i style ="font-family:hack;font-size:18px"> Linear Regression based FOS prediction </i>
     </div>
     """
-    #from typing_extensions import Final
+    from typing_extensions import Final
 
-#ModuleNotFoundError: No module named 'typing_extensions'
+
     # this line allows us to display the front end aspects we have 
     # defined in the above code
     st.markdown(html_temp, unsafe_allow_html = True)
