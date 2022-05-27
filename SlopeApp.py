@@ -19,7 +19,7 @@ def prediction(Height, SlopeAngle, Cohesion, FrictionAngle):
     prediction = slr.predict(
         [[Height, SlopeAngle, Cohesion, FrictionAngle]])
     print(prediction)
-    return prediction
+    return float(prediction)
       
   
 # this is the main function in which we define our webpage 
