@@ -8,6 +8,10 @@ df =  pd.read_csv("Ann.csv")
 X= df.loc[:, df.columns != "FOS"]
 y = df["FOS"]
 
+X= np.array(X, dtype=float)
+X= np.array(X, dtype=float)
+
+
 slr = LinearRegression().fit(X,y)
 slr.score(X,y)
 
