@@ -19,7 +19,7 @@ def prediction(Height, SlopeAngle, Cohesion, FrictionAngle):
     prediction = slr.predict(
         [[Height, SlopeAngle, Cohesion, FrictionAngle]])
     print(prediction)
-    return float(prediction)
+    return np.array(prediction, dtype= float)
       
   
 # this is the main function in which we define our webpage 
@@ -45,13 +45,13 @@ def main():
     # the following lines create text boxes in which the user can enter 
     # the data required to make the prediction
     Height = st.text_input("Height (m)", "")
-    Height= np.array(Height, dtype= float)
+    #Height= np.array(Height, dtype= float)
     SlopeAngle = st.text_input("Slope Angle (o)", "")
-    SlopeAngle = np.array(SlopeAngle, dtype= float)
+    #SlopeAngle = np.array(SlopeAngle, dtype= float)
     Cohesion = st.text_input("Cohesion (KPa)", "")
-    Cohesion= np.array(Cohesion, dtype= float)
+    #Cohesion= np.array(Cohesion, dtype= float)
     FrictionAngle = st.text_input("Friction Angle (o)", "")
-    FrictionAngle = np.array(FrictionAngle, dtype= float)
+    #FrictionAngle = np.array(FrictionAngle, dtype= float)
     result =""
       
     # the below line ensures that when the button called 'Predict' is clicked, 
