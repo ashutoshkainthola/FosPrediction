@@ -44,10 +44,14 @@ def main():
       
     # the following lines create text boxes in which the user can enter 
     # the data required to make the prediction
-    Height = float(st.text_input("Height (m)", ""))
-    SlopeAngle = float(st.text_input("Slope Angle (o)", ""))
-    Cohesion = float(st.text_input("Cohesion (KPa)", ""))
-    FrictionAngle = float(st.text_input("Friction Angle (o)", ""))
+    Height = st.text_input("Height (m)", "")
+    Height= float(Height)
+    SlopeAngle = st.text_input("Slope Angle (o)", "")
+    SlopeAngle = float(SlopeAngle)
+    Cohesion = st.text_input("Cohesion (KPa)", "")
+    Cohesion= float(Cohesion)
+    FrictionAngle = st.text_input("Friction Angle (o)", "")
+    FrictionAngle = float(FrictionAngle)
     result =""
       
     # the below line ensures that when the button called 'Predict' is clicked, 
