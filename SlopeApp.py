@@ -3,6 +3,7 @@ import numpy as np
 import pickle
 import streamlit as st
 from PIL import Image
+pip install typing_extensions
 import typing-extensions 
   
 # loading in the model to predict on the data
