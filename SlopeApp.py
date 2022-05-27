@@ -31,8 +31,8 @@ def main():
     # the font and background color, the padding and the text to be displayed
     html_temp = """
     <div style ="background-color:skyblue;padding:10px">
-    <h2 style ="color:black;text-align:center;">Slope FOS Prediction App </h2>
-    <i style ="font-family:hack;font-size:18px"> Machine Learning Enabled FOS Prediction </i>
+    <h2 style ="color:black;text-align:center;">Slope Stability App </h2>
+    <i style ="font-family:hack;font-size:18px"> Machine Learning Enabled Slope FOS Prediction </i>
     </div>
     """
     from typing_extensions import Final
