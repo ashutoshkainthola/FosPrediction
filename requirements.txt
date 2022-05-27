@@ -1,7 +1,7 @@
 scikit-learn 
 numpy 
 pandas 
-PIL 
+joblib 
 typing_extensions 
 streamlit 
 
