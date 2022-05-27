@@ -58,7 +58,7 @@ def main():
     # the prediction function defined above is called to make the prediction 
     # and store it in the variable result
     if st.button("Predict"):
-        result = prediction(Height, SlopeAngle, Cohesion, FrictionAngle)
+        result = prediction(float(Height), float(SlopeAngle), float(Cohesion), float(FrictionAngle))
         result = np.array(result, dtype= float) 
     st.success('The Factor of Safety of the slope is: {}'.format(result))
      
