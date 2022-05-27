@@ -45,13 +45,13 @@ def main():
     # the following lines create text boxes in which the user can enter 
     # the data required to make the prediction
     Height = st.text_input("Height (m)", "")
-    Height= float(Height)
+    Height= np.array(Height, dtype= float)
     SlopeAngle = st.text_input("Slope Angle (o)", "")
-    SlopeAngle = float(SlopeAngle)
+    SlopeAngle = np.array(SlopeAngle, dtype= float)
     Cohesion = st.text_input("Cohesion (KPa)", "")
-    Cohesion= float(Cohesion)
+    Cohesion= np.array(Cohesion, dtype= float)
     FrictionAngle = st.text_input("Friction Angle (o)", "")
-    FrictionAngle = float(FrictionAngle)
+    FrictionAngle = np.array(FrictionAngle, dtype= float)
     result =""
       
     # the below line ensures that when the button called 'Predict' is clicked, 
@@ -59,7 +59,7 @@ def main():
     # and store it in the variable result
     if st.button("Predict"):
         result = prediction(Height, SlopeAngle, Cohesion, FrictionAngle)
-        result = float(result) 
+        result = np.array(result, dtype= float) 
     st.success('The Factor of Safety of the slope is: {}'.format(result))
      
 if __name__=='__main__':
