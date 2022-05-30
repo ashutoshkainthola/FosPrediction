@@ -32,7 +32,7 @@ def main():
     html_temp = """
     <div style ="background-color:skyblue;padding:10px">
     <h2 style ="color:black;text-align:center;">Slope Stability App </h2>
-    <i style ="font-family:hack;font-size:18px"> Machine Learning Enabled Slope FOS Prediction </i>
+    <h3 style ="font-family:hack;font-size:18px"> Machine Learning Enabled Slope FOS Prediction </h3>
     <p> Prediction is based on 180 slopes, analyzed for stability in a finite difference code following MC failure criterion </p>
     </div>
     """
