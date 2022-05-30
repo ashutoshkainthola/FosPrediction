@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np 
 from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import HistGradientBoostingRegressor
 import joblib
 
 df =  pd.read_csv("Ann.csv")
@@ -12,7 +13,10 @@ X= np.array(X, dtype=float)
 X= np.array(X, dtype=float)
 
 
-slr = LinearRegression().fit(X,y)
+#slr = LinearRegression().fit(X,y)
+#slr.score(X,y)
+
+slr = HistGradientBoostingRegressor().fit(X,y)
 slr.score(X,y)
 
 import pickle 
