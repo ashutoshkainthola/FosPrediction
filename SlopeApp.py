@@ -25,6 +25,7 @@ def prediction(Height, SlopeAngle, Cohesion, FrictionAngle):
 # this is the main function in which we define our webpage 
 def main():
       # giving the webpage a title
+    st.markdown("<h1 style='text-align: center; color: red;'>Some title</h1>", unsafe_allow_html=True)
     st.title("Geo-Engineering & Computing Laboratory, Banaras Hindu University")
       
     # here we define some of the front end elements of the web page like 
