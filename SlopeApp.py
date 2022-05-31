@@ -32,9 +32,9 @@ def main():
     html_temp = """
     <div style ="background-color:skyblue;padding:10px">
     <h2 style ="color:black;text-align:center;">Slope Stability App </h2>
-    <h3 style ="font-family:hack;font-size:18px"> Machine Learning Enabled Slope FOS Prediction </h3>
-    <p> Prediction is based on analysis results of 180 slopes, examined for stability in a finite difference code following MC failure criterion </p>
-    <p> Powered by Histogram Based Gradient Boosting Algorithm </p>
+    <h3 style ="font-family:hack;font-size:18px"> Histogram Based Gradient Boosting Algorithm Enabled Slope FOS Prediction </h3>
+    <p> Prediction is based on analysis results of 180 slopes, examined for stability in a finite difference code following MC failure criterion. </p>
+    <p> Data trained on coarse grained soil slopes.  </p>
     </div>
     """
     from typing_extensions import Final
