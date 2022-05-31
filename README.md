@@ -1,2 +1,2 @@
 # FosPrediction
-Linear regression based slope FOS prediction application 
+Histogram based Gradient Boosting Regression powered slope FOS prediction application 
