@@ -25,7 +25,7 @@ def prediction(Height, SlopeAngle, Cohesion, FrictionAngle):
 # this is the main function in which we define our webpage 
 def main():
       # giving the webpage a title
-    st.title("Geo-Engineering Laboratory, BHU")
+    st.title("Geo-Engineering & Computing Laboratory, BHU")
       
     # here we define some of the front end elements of the web page like 
     # the font and background color, the padding and the text to be displayed
@@ -34,6 +34,7 @@ def main():
     <h2 style ="color:black;text-align:center;">Slope Stability App </h2>
     <h3 style ="font-family:hack;font-size:18px"> Machine Learning Enabled Slope FOS Prediction </h3>
     <p> Prediction is based on analysis results of 180 slopes, examined for stability in a finite difference code following MC failure criterion </p>
+    <p> Powered by Histogram Based Gradient Boosting Algorithm </p>
     </div>
     """
     from typing_extensions import Final
